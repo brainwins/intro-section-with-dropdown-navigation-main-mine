@@ -8,13 +8,14 @@ body{
   font-size: 16px;
   box-sizing: border-box;
   font-family: 'Epilogue', sans-serif;
+  margin: 0;
 }
 header{
   margin: auto;
   max-width: 1440px;
   width: 100%;
   font-size: 0.95rem;
-  height: 6rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -205,7 +206,7 @@ main{
   transform: rotateX(180deg);
   filter: brightness(0);
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   header{
     justify-content: space-between;
   }
@@ -218,7 +219,7 @@ main{
     transform: translateX(0%);
   }
   .mobile-nav-toggle{
-    margin-right: 10%;
+    margin-right: 5vw;
     display: block;
     cursor:pointer;
     width: 1.5rem;
@@ -229,6 +230,9 @@ main{
     border: 0;
     background-repeat:no-repeat;
     transform-origin: 50% 50%;
+  }
+  .logo{
+    margin-left: 5vw;
   }
   .mobile-nav-toggle[data-open="true"]{
     background: url(../images/icon-close-menu.svg);
@@ -318,7 +322,7 @@ main{
     }
     .main-left{
       width: 100%;
-      margin:0;
+      margin-top:8vw;
       padding: 0;
       text-align: center;
       .main-text p{
@@ -330,6 +334,9 @@ main{
         margin:auto;
         margin-top: 1rem;
         padding: .95rem 1.5rem;
+      }
+      .hero-text{
+        font-size: 9.5vw;
       }
       h1{
         text-align: center;
@@ -354,4 +361,28 @@ main{
         }
   }
 
+}
+@media (max-width: 1050px) {
+  .main-right{
+    align-items: flex-start;
+  }
+  .main-left{
+    padding-top: 0;
+    h1{
+      margin-top: 2%;
+      margin-bottom: 1vw;
+    }
+    .hero-text{
+      font-size: 6vw;
+    }
+    p{
+      padding-right: 2rem;
+      font-size: 2.5vw;
+    }
+  }
+  .main-right-image{
+    img{
+      width:100%;
+    }
+  }
 }
