@@ -39,6 +39,7 @@ header{
     align-items: center;
     justify-content: flex-start;
     .button-dropdown{
+      position: relative;
       white-space: nowrap;
     }
   }
@@ -49,7 +50,7 @@ header{
     justify-content: flex-end;
     width: 50%;
   }
-  span{
+  div{
     margin-right: 7.7%;
     cursor: pointer;
     img{
@@ -69,8 +70,8 @@ header{
     background-color: white;
     box-shadow: -4px 19px 39px 9px rgba(0,0,0,0.08);
     border-radius: 15px;
-    top: 5rem;
-    left: 7rem;
+    top: 1.2rem;
+    left: -4.5rem;
     ul{
       list-style: none;
       padding: 0;
@@ -98,8 +99,8 @@ header{
     background-color: white;
     box-shadow: -4px 19px 39px 9px rgba(0,0,0,0.08);
     border-radius: 15px;
-    top: 5rem;
-    left: 20rem;
+    top: 1.2rem;
+    left: 0rem;
     ul{
       list-style: none;
       padding: 0;
@@ -121,7 +122,7 @@ header{
 }
 .user-options{
   width: 40%;
-  margin-right: 2%;
+  margin-right: 8%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -162,6 +163,7 @@ main{
     line-height: 1.75rem;
   }
   a{
+    box-sizing: border-box;
     font-size: 1.1rem;
     display: inline-block;
     margin-top: 8%;
@@ -169,7 +171,13 @@ main{
     background-color: black;
     color: white;
     padding: 1.2rem 2.2rem;
+    border: 2px solid black;
     border-radius: 15px;
+
+    &:hover{
+      background-color: white;
+      color:black;
+    }
   }
 }
 .main-left-footer{
@@ -209,6 +217,7 @@ main{
 @media (max-width: 750px) {
   header{
     justify-content: space-between;
+    font-size: 4.5vw;
   }
   .nav-bar[data-visible="true"] {
     transition: 0.45s ease-out;
@@ -260,6 +269,9 @@ main{
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+        div{
+          margin-bottom: 7vw;
+        }
     }
     .nav-bar-right{
       width: 100%;
@@ -272,7 +284,7 @@ main{
 
     span{
       color: var(--medium-gray);
-      margin-bottom: 1rem;
+      margin-bottom: 7vw;
     }
     .features-dropdown{
       top:0;
