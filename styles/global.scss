@@ -9,6 +9,7 @@ body{
   box-sizing: border-box;
   font-family: 'Epilogue', sans-serif;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 header{
   margin: auto;
@@ -173,6 +174,7 @@ main{
     padding: 1.2rem 2.2rem;
     border: 2px solid black;
     border-radius: 15px;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover{
       background-color: white;
